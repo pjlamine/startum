@@ -1,0 +1,35 @@
+{
+  "name": "startumblog",
+  "version": "1.0.0",
+  "description": "REST API for startUM",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjlamine/startum.git"
+  },
+  "keywords": [
+    "startum",
+    "blog",
+    "blogsite",
+    "entrepreneurship",
+    "startup",
+    "college",
+    "michigan"
+  ],
+  "author": "Paul Lamine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjlamine/startum/issues"
+  },
+  "homepage": "https://github.com/pjlamine/startum#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7"
+  }
+}
