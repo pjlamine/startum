@@ -1,6 +1,7 @@
-jQuery(document).ready(function($) {
+var loadAnimations = ()=> {
 
 	'use strict';
+	// console.log("loading animations");
 
     $('.imageGallery1 a').simpleLightbox();
 
@@ -8,7 +9,7 @@ jQuery(document).ready(function($) {
     var owl = $("#owl-portfolio");
 
       owl.owlCarousel({
-        
+
         pagination : true,
         paginationNumbers: false,
         autoPlay: 6000, //Set AutoPlay to 3 seconds
@@ -17,13 +18,14 @@ jQuery(document).ready(function($) {
         itemsDesktopSmall : [900,3], // betweem 900px and 601px
         itemsTablet: [600,2], //2 items between 600 and 0
         itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-        
+
     });
 
 
     $('.tabgroup > div').hide();
     $('.tabgroup > div:first-of-type').show();
     $('.tabs a').click(function(e){
+			// console.log("hi");
       e.preventDefault();
         var $this = $(this),
         tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
@@ -33,7 +35,7 @@ jQuery(document).ready(function($) {
     $this.addClass('active');
     $(tabgroup).children('div').hide();
     $(target).show();
-  
+
     })
 
 
@@ -46,11 +48,11 @@ jQuery(document).ready(function($) {
         menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function(){
-          
+
           if($(this).hasClass('external')) {
             return;
           }
-            
+
           var item = $($(this).attr("href"));
           if (item.length) { return item; }
         });
@@ -60,7 +62,7 @@ jQuery(document).ready(function($) {
     menuItems.click(function(e){
       var href = $(this).attr("href"),
           offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-      $('html, body').stop().animate({ 
+      $('html, body').stop().animate({
           scrollTop: offsetTop
       }, 750);
       e.preventDefault();
@@ -70,7 +72,7 @@ jQuery(document).ready(function($) {
     $(window).scroll(function(){
        // Get container scroll position
        var fromTop = $(this).scrollTop()+topMenuHeight;
-       
+
        // Get id of current scroll item
        var cur = scrollItems.map(function(){
          if ($(this).offset().top < fromTop)
@@ -79,14 +81,14 @@ jQuery(document).ready(function($) {
        // Get the id of the current element
        cur = cur[cur.length-1];
        var id = cur && cur.length ? cur[0].id : "";
-       
+
        if (lastId !== id) {
            lastId = id;
            // Set/remove active class
            menuItems
              .parent().removeClass("active")
              .end().filter("[href=#"+id+"]").parent().addClass("active");
-       }                   
+       }
     });
 
 
@@ -121,4 +123,4 @@ jQuery(document).ready(function($) {
 
 
 
-});
+};

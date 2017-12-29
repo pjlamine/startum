@@ -4,9 +4,21 @@ var Schema = mongoose.Schema;
 
 
 var postSchema = new Schema({
-  name: {
+  title: {
     type: String,
-    required: 'Kindly enter the name of the post'
+    required: 'Kindly enter the title of the post'
+  },
+  body: {
+    type: String,
+    required: 'Blog posts must have a body'
+  },
+  author: {
+    type: String,
+    default: "Board"
+  },
+  image_src:{
+    type: String,
+    default: ""
   },
   Created_date: {
     type: Date,

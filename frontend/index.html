@@ -9,7 +9,7 @@
     	<meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--
-Power Template
+Website built off of Templatemo's Power Template
 http://www.templatemo.com/tm-508-power
 -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -22,6 +22,7 @@ http://www.templatemo.com/tm-508-power
         <link rel="stylesheet" href="css/owl-carousel.css">
 
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="js/blog.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -50,10 +51,11 @@ http://www.templatemo.com/tm-508-power
                                                 <!-- <li> <img src="img/logos/startum.jpg" href="#top" class="navbar-brand nav-logo"></img></li> -->
                                                 <li class="active"><a href="#">Home</a></li>
                                                 <li><a href="#about">About Us</a></li>
-                                                <li><a href="#portfolio">Portfolio</a></li>
                                                 <li><a href="#blog">Blog Entries</a></li>
                                                 <li><a href="https://trello.com/" class="external" target="_parent" rel="nofollow">Team Scrum Boards</a></li>
                                                 <li><a href="#contact-us">Contact</a></li>
+                                                <li><a id="apply" class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSdfDxOfLQJeMxFUKBzBRfi4Aw79nF1D2YAT4Zkl6m2YVVtDqQ/viewform"><b>Apply</></a></li>
+
                                             </ul>
                                         </div> <!-- /.main-menu -->
                                     </div>
@@ -91,48 +93,37 @@ http://www.templatemo.com/tm-508-power
             </div>
         </div>
 
-
-        <!-- <div class="intro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Web Design &amp; Development Crew!</h4>
-                        <h6>WE CREATE HTML CSS TEMPLATE</h6>
-                        <div class="border-button"><a href="#portfolio">Discover More</a></div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
         <section id="about" class="page-section">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="service-item first-service">
                             <div class="icon">
-                                <img src="img/first-service-icon.png" alt="">
+                                <img src="img/search-white.ico" alt="">
                             </div>
-                            <h4>Mobile Ready</h4>
-                            <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                            <h4>Innovate</h4>
+                            <!-- <p>Discover the next "Uber for _____"</p> -->
+                            <p>Analyze your ideas to discover untapped markets and innovative value propositions</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-item second-service">
                             <div class="icon">
-                                <img src="img/second-service-icon.png" alt="">
+                                <img src="img/first-service-icon.png" alt="">
                             </div>
-                            <h4>HTML CSS</h4>
-                            <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                            <h4>Build</h4>
+                            <!-- <p>Struggle with basic Web and mobile development to create a semi-functioning app</p> -->
+                            <p>Develop a lean startup with the brightest engineering and business minds of our generation </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-item third-service">
                             <div class="icon">
-                                <img src="img/third-service-icon.png" alt="">
+                                <img src="img/rocket-64.ico" alt="">
                             </div>
-                            <h4>Responsive Design</h4>
-                            <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                            <h4>Grow</h4>
+                            <!-- <p>Grow your resume with passionate and self driven buzzwords</p> -->
+                            <p>Receive funding and support as your startup gains traction</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +135,7 @@ http://www.templatemo.com/tm-508-power
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-heading">
-                            <h4>What we can do else</h4>
+                            <h4>About StartUM</h4>
                             <p>Sed tortor lorem, mollis in fringilla sit amet, accumsan eget turpis. Donec ut sollicitudin quam. Sed tempor porta malesuada. Cras aliquam nisi eget efficitur ultrices. Aenean ac ultricies nisl.</p>
                         </div>
                     </div>
@@ -154,53 +145,43 @@ http://www.templatemo.com/tm-508-power
                         <div class="col-md-12">
                             <div class="row">
                                 <ul class="tabs clearfix" data-tabgroup="second-tab-group">
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#unique" class="active">
+                                    <li class="col-md-3 col-sm-12 col-xs-12">
+                                        <a href="#ideation" class="active">
                                             <div class="list-item">
                                                 <div class="icon">
                                                     <img src="img/first-list-icon.png" alt="">
                                                 </div>
-                                                <h4>Unique Ideas</h4>
+                                                <h4>Ideation</h4>
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#theme">
+                                    <li class="col-md-3 col-sm-12 col-xs-12">
+                                        <a href="#customer_discovery">
                                             <div class="list-item">
                                                 <div class="icon">
-                                                    <img src="img/second-list-icon.png" alt="">
+                                                    <img src="img/search.ico" alt="">
                                                 </div>
-                                                <h4>Theme Edit</h4>
+                                                <h4>Customer Discovery</h4>
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#translation">
+                                    <li class="col-md-3 col-sm-12 col-xs-12">
+                                        <a href="#development">
                                             <div class="list-item">
                                                 <div class="icon">
-                                                    <img src="img/third-list-icon.png" alt="">
+                                                    <img src="img/phone-72-48.ico" alt="">
                                                 </div>
-                                                <h4>Translation</h4>
+                                                <h4>development</h4>
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#event">
+                                    <li class="col-md-3 col-sm-12 col-xs-12">
+                                        <a href="#funding">
                                             <div class="list-item">
                                                 <div class="icon">
-                                                    <img src="img/fourth-list-icon.png" alt="">
+                                                    <img src="img/dollar-48.ico" alt="">
                                                 </div>
-                                                <h4>Event Meeting</h4>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#photo">
-                                            <div class="list-item">
-                                                <div class="icon">
-                                                    <img src="img/fivth-list-icon.png" alt="">
-                                                </div>
-                                                <h4>HD Photos</h4>
+                                                <h4>Funding</h4>
                                             </div>
                                         </a>
                                     </li>
@@ -209,77 +190,51 @@ http://www.templatemo.com/tm-508-power
                         </div>
                         <div class="col-md-12">
                             <section id="second-tab-group" class="tabgroup">
-                                <div id="unique">
+                                <div id="ideation">
                                     <div class="row">
                                         <div class="tab-content-services">
                                             <div class="col-md-6">
                                                 <div class="left-text">
-                                                    <h4>Unique Ideas</h4>
-                                                    <p>StartUM is a student-run organization at the Ross School of Business and Michigan Engineering School that focuses on turning innovative ideas into viable start-ups. Students take a hands-on approach by working in teams to brainstorm and develop a product or service. In addition you may be eligible to receive funding. Participating students will have access to numerous resources including workshops, guest speakers, conferences, and networking opportunities with investors and company executives.
-                                                      <!-- +1 messenger bag pop-up banh mi jianbing art party roof party try-hard retro small batch. Kogi fanny pack raclette mustache, pok pok jean shorts +1 tote bag keffiyeh. Post-ironic af master polaroid.</p> -->
-                                                    <div class="primary-button">
-                                                        <a href="#contact-us">Download Now</a>
-                                                    </div>
+                                                    <h4>Ideation</h4>
+                                                    <p>Ideation is the formation of ideas or concepts. At StartUM,
+                                                      you will be lead through numerous exercises to help you
+                                                      break the current assumptions of different business models
+                                                      and do discover the core concepts of innovation.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="right-image">
-                                                    <img src="img/right-side-image_1.jpg" alt="">
+                                                    <img src="img/ideation.png" alt="">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="theme">
+                                <div id="customer_discovery">
                                     <div class="row">
                                         <div class="tab-content-services">
                                             <div class="col-md-6">
                                                 <div class="left-text">
-                                                    <h4>Theme Edit</h4>
-                                                    <p>Lomo austin health goth meditation quinoa, banh mi pork belly man bun hella ugh migascardigan gluten-free. Gochujang dreamcatcher tofu brunch banjo. VHS austin cardigan squid poke tumeric humblebrag next level everyday carry biodiesel put a bird on it raw denim. Fanny pack aesthetic kinfolk twee <br><br>succulents roof party wayfarers meggings ugh tumblr shaman kale chips green. Before they sold out live-edge kinfolk man bun pop-up scenester ramps taiyaki tacos raclette mixtape la croix post-ironic leggings. Twee typewriter taxidermy, woke farm-to-table hell of cliche celiac meggings.</p>
-                                                    <div class="primary-button">
-                                                        <a href="#contact-us">Download Now</a>
-                                                    </div>
+                                                    <h4>Customer Discovery</h4>
+                                                    <p>hella ugh migascardigan gluten-free. Gochujang dreamcatcher tofu brunch banjo. VHS austin cardigan squid poke tumeric humblebrag next level everyday carry biodiesel put a bird on it raw denim. Fanny pack aesthetic kinfolk twee <br><br>succulents roof party wayfarers meggings ugh tumblr shaman kale chips green. Before they sold out live-edge kinfolk man bun pop-up scenester ramps taiyaki tacos raclette mixtape la croix post-ironic leggings. Twee typewriter taxidermy, woke farm-to-table hell of cliche celiac meggings.</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="right-image">
-                                                    <img src="img/right-side-image_2.jpg" alt="">
+                                                    <img src="img/customer_discovery.png" alt="">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="translation">
+                                <div id="development">
                                     <div class="row">
                                         <div class="tab-content-services">
                                             <div class="col-md-6">
                                                 <div class="left-text">
-                                                    <h4>Translation</h4>
-                                                    <p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa microdosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm-to-table, cold-pressed authen tic. Mixtape hella beard meditation, organic polaroid waistcoat humblebrag taxider my tumblr. Hexagon kinfolk chartreuse shoreditch. <br><br>Pour-over hammock intelligentsia hashtag air plant distillery. Sustainable selvage hashtag, +1 messenger bag pop-up banh mi jianbing art party roof party try-hard retro small batch. Kogi fanny pack raclette mustache, pok pok jean shorts +1 tote bag keffiyeh. Post-ironic af master polaroid.</p>
-                                                    <div class="primary-button">
-                                                        <a href="#contact-us">Download Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="right-image">
-                                                    <img src="img/right-side-image_3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="event">
-                                    <div class="row">
-                                        <div class="tab-content-services">
-                                            <div class="col-md-6">
-                                                <div class="left-text">
-                                                    <h4>Event Meeting</h4>
-                                                    <p>Lomo austin health goth meditation quinoa, banh mi pork belly man bun hella ugh migascardigan gluten-free. Gochujang dreamcatcher tofu brunch banjo. VHS austin cardigan squid poke tumeric humblebrag next level everyday carry biodiesel put a bird on it raw denim. Fanny pack aesthetic kinfolk twee <br><br>succulents roof party wayfarers meggings ugh tumblr shaman kale chips green. Before they sold out live-edge kinfolk man bun pop-up scenester ramps taiyaki tacos raclette mixtape la croix post-ironic leggings. Twee typewriter taxidermy, woke farm-to-table hell of cliche celiac meggings.</p>
-                                                    <div class="primary-button">
-                                                        <a href="#contact-us">Download Now</a>
-                                                    </div>
+                                                    <h4>Development</h4>
+                                                    <p>La croix tumeric tbh quinoa microdosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm-to-table, cold-pressed authen tic. Mixtape hella beard meditation, organic polaroid waistcoat humblebrag taxider my tumblr. Hexagon kinfolk chartreuse shoreditch. <br><br>Pour-over hammock intelligentsia hashtag air plant distillery. Sustainable selvage hashtag, +1 messenger bag pop-up banh mi jianbing art party roof party try-hard retro small batch. Kogi fanny pack raclette mustache, pok pok jean shorts +1 tote bag keffiyeh. Post-ironic af master polaroid.</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -288,6 +243,32 @@ http://www.templatemo.com/tm-508-power
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div id="funding">
+                                    <div class="row">
+                                        <div class="tab-content-services">
+                                            <div class="col-md-6">
+                                                <div class="left-text">
+                                                    <h4>Funding</h4>
+                                                    <p>
+                                                      The University of Michigan has many of opportunities for student
+                                                      entrepreneurs to gain funding. StartUM will help connect you to
+                                                      funding opportunities at the Center for Entrepreneurship and the
+                                                      Zell Laurie Institute. StartUM also hosts our own in-house Pitch
+                                                      event for a panel of investors from numerous well known accelerators
+                                                      and funds.
+
+                                                    </p>
+                                                      </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="right-image">
+                                                    <img src="img/funding.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div id="photo">
@@ -318,7 +299,7 @@ http://www.templatemo.com/tm-508-power
         </div>
 
 
-        <section id="portfolio" class="portfolio-section">
+        <!-- <section id="portfolio" class="portfolio-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -383,7 +364,7 @@ http://www.templatemo.com/tm-508-power
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <section class="tabs-content" id="blog">
@@ -391,16 +372,16 @@ http://www.templatemo.com/tm-508-power
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-heading">
-                            <h4>Our Blog Entries</h4>
-                            <p>Aliquam neque neque, commodo in euismod id, lobortis in lacus. Duis interdum sagittis velit, fermentum tincidunt lectus. Nam ornare turpis.</p>
+                            <h4>The StartUM Blog</h4>
+                            <p>Keep up to date with everything going on at StartUM through our blog!</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="wrapper">
-                        <div class="col-md-6">
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                <li><a href="#tab1" class="active">
+                        <div class="col-md-6" >
+                            <ul id="blog-headers" class="tabs clearfix" data-tabgroup="first-tab-group">
+                                <!-- <li><a href="#tab1" class="active">
                                     shoreditch wolf ethical hashtag
                                     <ul class="info-post">
                                         <li><i class="fa fa-user"></i>Admin</li>
@@ -415,36 +396,13 @@ http://www.templatemo.com/tm-508-power
                                         <li><i class="fa fa-calendar"></i>08 November 2017</li>
                                         <li><i class="fa fa-wechat"></i>16 Comments</li>
                                     </ul>
-                                </a></li>
-                                <li><a href="#tab3">
-                                    Seitan flexitarian prism shaman
-                                    <ul class="info-post">
-                                        <li><i class="fa fa-user"></i>Nanny</li>
-                                        <li><i class="fa fa-calendar"></i>02 November 2017</li>
-                                        <li><i class="fa fa-wechat"></i>9 Comments</li>
-                                    </ul>
-                                </a></li>
-                                <li><a href="#tab4">
-                                    Fashion axe selvage everyday carry
-                                    <ul class="info-post">
-                                        <li><i class="fa fa-user"></i>Krist</li>
-                                        <li><i class="fa fa-calendar"></i>28 October 2017</li>
-                                        <li><i class="fa fa-wechat"></i>11 Comments</li>
-                                    </ul>
-                                </a></li>
-                                <li><a href="#tab5">
-                                    chambray truffaut godard flannel
-                                    <ul class="info-post">
-                                        <li><i class="fa fa-user"></i>Admin</li>
-                                        <li><i class="fa fa-calendar"></i>22 October 2017</li>
-                                        <li><i class="fa fa-wechat"></i>24 Comments</li>
-                                    </ul>
-                                </a></li>
+                                </a></li> -->
+
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="blog-body">
                             <div id="first-tab-group" class="tabgroup">
-                                <div id="tab1">
+                                <!-- <div id="tab1">
                                     <img src="img/blog-post-1.jpg" alt="">
                                     <div class="text-content">
                                         <h4>shoreditch wolf ethical hashtag</h4>
@@ -469,51 +427,15 @@ http://www.templatemo.com/tm-508-power
                                         <p>Artisan messenger bag gochujang tote bag, leggings synth literally unicorn street art ramps slow-carb everyday carry mixtape. Tbh synth hell of kombucha hot chicken dreamcatcher gentrify organic asymmetrical gastropub VHS photo booth raw denim. Vape edison bulb glossier air plant heirloom readymade bitters air plant pug.</p>
                                         <div class="primary-button"><a href="#contact-us">Continue Reading</a></div>
                                     </div>
-                                </div>
-                                <div id="tab3">
-                                    <img src="img/blog-post-3.jpg" alt="">
-                                    <div class="text-content">
-                                        <h4>Seitan flexitarian prism shaman</h4>
-                                        <ul class="info-post">
-                                            <li><i class="fa fa-user"></i>Nanny</li>
-                                            <li><i class="fa fa-calendar"></i>02 November 2017</li>
-                                            <li><i class="fa fa-wechat"></i>9 Comments</li>
-                                        </ul>
-                                        <p>Cronut slow-carb 90's irony cred fashion axe jean shorts cardigan wayfarers. Typewriter retro plaid jianbing 90's taiyaki, sriracha vegan fam. Letterpress cornhole mixtape ethical celiac distillery echo park. Selvage readymade cornhole vape. Semiotics iPhone mumblecore, sartorial succulents slow-carb offal pabst trust fund brunch.</p>
-                                        <div class="primary-button"><a href="#contact-us">Continue Reading</a></div>
-                                    </div>
-                                </div>
-                                <div id="tab4">
-                                    <img src="img/blog-post-4.jpg" alt="">
-                                    <div class="text-content">
-                                        <h4>Fashion axe selvage everyday carry</h4>
-                                        <ul class="info-post">
-                                            <li><i class="fa fa-user"></i>Krist</li>
-                                            <li><i class="fa fa-calendar"></i>28 October 2017</li>
-                                            <li><i class="fa fa-wechat"></i>11 Comments</li>
-                                        </ul>
-                                        <p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa micro dosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm to table, cold pressed authen tic. Mixtape hella beard meditation, Pok pok meh tote bag single-origin coffee, everyday carry unicorn raw denim distillery cray pork belly taxidermy organic polaroid.</p>
-                                        <div class="primary-button"><a href="#contact-us">Continue Reading</a></div>
-                                    </div>
-                                </div>
-                                <div id="tab5">
-                                    <img src="img/blog-post-5.jpg" alt="">
-                                    <div class="text-content">
-                                        <h4>chambray truffaut godard flannel</h4>
-                                        <ul class="info-post">
-                                            <li><i class="fa fa-user"></i>Admin</li>
-                                            <li><i class="fa fa-calendar"></i>22 October 2017</li>
-                                            <li><i class="fa fa-wechat"></i>24 Comments</li>
-                                        </ul>
-                                        <p>Cronut slow-carb 90's irony cred fashion axe jean shorts cardigan wayfarers. Typewriter retro plaid jianbing 90's taiyaki, sriracha vegan fam. Letterpress cornhole mixtape ethical celiac distillery echo park. Selvage readymade cornhole vape. Semiotics iPhone mumblecore, sartorial succulents slow-carb offal pabst trust fund brunch.</p>
-                                        <div class="primary-button"><a href="#contact-us">Continue Reading</a></div>
-                                    </div>
-                                </div>
+                                </div> -->
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- Container -->
         </section>
 
 
@@ -527,7 +449,7 @@ http://www.templatemo.com/tm-508-power
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-6">
                         <form id="contact" action="#" method="post">
                             <div class="row">
@@ -565,17 +487,17 @@ http://www.templatemo.com/tm-508-power
                         </form>
                     </div>
                     <div class="col-md-6">
-                        <div id="map">
+                        <div id="map"> -->
 	<!-- How to change your own map point
             1. Go to Google Maps
             2. Click on your location point
             3. Click "Share" and choose "Embed map" tab
             4. Copy only URL and paste it within the src="" field below
 	-->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -583,16 +505,8 @@ http://www.templatemo.com/tm-508-power
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                            <p>Copyright &copy; 2017 Your Company <br>
-                            <a href="http://www.templatemo.com/tm-508-power">Power Theme</a> by <a href="http://www.html5max.com" target="_parent">HTML5 Max</a></p>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <ul class="social-icons">
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Linkedin</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
+                            <p>Copyright &copy; 2017 StartUM Accelerator <br>
+                              Website Developed by Paul Lamine
                     </div>
                     <div class="col-md-2 col-md-offset-2 col-sm-12">
                         <div class="back-to-top">
@@ -618,12 +532,14 @@ http://www.templatemo.com/tm-508-power
 
         <script type="text/javascript">
         $(document).ready(function() {
-
+            loadPosts();
             // mobile nav toggle
             $('#nav-toggle').on('click', function (event) {
                 event.preventDefault();
                 $('#main-nav').toggleClass("open");
             });
+
+
         });
         </script>
 
