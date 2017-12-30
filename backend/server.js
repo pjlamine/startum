@@ -1,5 +1,8 @@
 var express = require('express'),
   app = express(),
+  cors = require('cors'); // allow cros origin requests
+  app.use(cors())
+
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
   Task = require('./api/models/model'), //created model loading here
