@@ -1,22 +1,75 @@
 <!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
 <html>
 <body>
 
   <p>If you want a pretty admin site, fucking style it yourself. -Dev Ops</p>
+  <br>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
 <div class="container">
-  <form action="/action_page.php">
-    Author:<br>
+
+  <form action="http://54.175.185.8:3000/posts" method="post">
+    Author:
     <input type="text" name="author" value="admin">
     <br>
-    Blog Post Body:<br>
-    <textarea name="lastname" rows="10" cols="80" value="Mouse"> </textarea>
+    Title:
+    <input type="text" name="title" value="">
+    <br>Blog Post Body:<br>
+    <textarea name="body" rows="10" cols="80" value=""> </textarea>
     <br><br>
     <input type="submit" value="Submit Post">
   </form>
   <p>This will immediately publish things to the startum blog</p>
 </div>
 
+
+<div class="jumbotron">
+  <h1>Posts</h1>
+  <p>Click the 'delete' button on a post to delete it from the blog.
+    <br> WARNING: Deleted posts are removed from the database and cannot be recovered
+  </p>
+</div>
+<div class="container" >
+  <ul class="list-group" id="posts">
+    <li class="list-group-item">
+      title: thing
+      <br>
+      text: lorum ipsum blah blah
+      <br>
+      <button onclick="delete_post('1c23')">delete</button>
+    </li>
+  </ul>
+</div>
+
 </body>
 </html>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $.get("http://54.175.185.8:3000/posts", (posts)=>{
+        posts.reverse().forEach((post)=>{
+          var html =  '<li class="list-group-item">'
+                + 'title:' + post.title
+                + '<br> text:' +post.body.substring(0,100)
+                + '<br> <button onclick="delete_post(\'' +post._id+ '\')">delete</button>'
+                + '</li>';
+          $("#posts").append(html);
+        });
+    });
+  });
+
+
+
+  var delete_post = (id)=>{
+    $.ajax({
+    url: "http://54.175.185.8:3000/posts/" + id,
+    type: 'DELETE',
+    success: (id)=>{
+      alert("deleted " + id);
+    },
+  });
+
+  }
+</script>
