@@ -33,13 +33,7 @@
 </div>
 <div class="container" >
   <ul class="list-group" id="posts">
-    <li class="list-group-item">
-      title: thing
-      <br>
-      text: lorum ipsum blah blah
-      <br>
-      <button onclick="delete_post('1c23')">delete</button>
-    </li>
+
   </ul>
 </div>
 
@@ -53,7 +47,7 @@
           var html =  '<li class="list-group-item">'
                 + 'title:' + post.title
                 + '<br> text:' +post.body.substring(0,100)
-                + '<br> <button onclick="delete_post(\'' +post._id+ '\')">delete</button>'
+                + '...<br> <button onclick="delete_post(\'' +post._id+ '\')">delete</button>'
                 + '</li>';
           $("#posts").append(html);
         });
