@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- The raptorize file  -->
+<script src="jquery.raptorize.1.0.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+    $('#button').raptorize();
+  });
+</script>
 
 <html>
 <body>
 
   <p>If you want a pretty admin site, fucking style it yourself. -Dev Ops</p>
   <br>
-
 <div class="container">
 
   <form action="http://54.175.185.8:3000/posts" method="post">
@@ -21,7 +30,15 @@
     <br><br>
     <input type="submit" value="Submit Post">
   </form>
-  <p>This will immediately publish things to the startum blog</p>
+  <p>
+    This will immediately publish things to the startum blog...
+    I was realy lazy and didn't care to do anything to handle
+    error, so it re-directs to the http response. If it says
+    "error" or somthing like that anywhere then it didn't
+    post correctly, so just try again (make sure all fields are filled)
+    . otherwise, message me (Paul) the error. If you guy's are still
+    using this after I'm graduated, then email me @ pjlamine@gmail.com
+  </p>
 </div>
 
 
@@ -36,6 +53,7 @@
 
   </ul>
 </div>
+<button id="button" name="button">fuckin press me</button>
 
 </body>
 </html>
@@ -62,6 +80,7 @@
     type: 'DELETE',
     success: (id)=>{
       alert("deleted " + id);
+      $(".jumbotron").raptorize();
     },
   });
 
