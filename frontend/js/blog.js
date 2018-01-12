@@ -36,7 +36,7 @@ var makeBlog = (posts) =>{
 
 
 var loadPosts = ()=>{
-  $.get("http://54.175.185.8:3000/posts", makeBlog);
+  $.get("http://startum-entrepreneurship.com:3000/posts", makeBlog);
 
     // $.get("http://localhost:3000/posts", makeBlog); // uncomment for local development
 
